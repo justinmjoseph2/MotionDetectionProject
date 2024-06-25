@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motion Detection</title>
+    <style>
+        body{
+            background-color: #f53b53;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-top: 20%;
+            padding-left: 25%;
+        }
+        h2{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        button{
+            color: #f53b53;
+            background-color: white;
+            height: 50px;
+            width: 200px;
+            border-radius: 50px;
+            border-width: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+    
+    <div class="formC">
+    <form method="post">
+        <h2>Subscribe to get Email notifications!</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="button" type="submit">Subscribe</button>
+    </form>
+    
+</div>
+    </div>
+</body>
+</html>
